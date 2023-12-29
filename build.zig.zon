@@ -1,0 +1,11 @@
+.{
+    .name = "lz",
+    .version = "0.0.1",
+    .dependencies = .{
+        .cli = .{
+            .url = "https://github.com/sam701/zig-cli/archive/refs/tags/0.8.0.tar.gz",
+            .hash = "12203009a6f4d6391caef59ff1cde3f1a3a6376a89b14a32a9972e56398329d74bbb",
+        },
+    }
+}
+

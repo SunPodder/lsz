@@ -24,6 +24,14 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const cli = b.dependency("cli", .{
+        .target = target,
+        .optimize = optimize,
+    });
+
+    exe.addModule("cli", cli.module("zig-cli"));
+    exe.linkLibrary(cli.artifact("zig-cli"));
+
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default
     // step when running `zig build`).
