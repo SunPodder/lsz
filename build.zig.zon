@@ -1,5 +1,5 @@
 .{
-    .name = "lz",
+    .name = "lsz",
     .version = "0.0.1",
     .dependencies = .{
         .cli = .{
